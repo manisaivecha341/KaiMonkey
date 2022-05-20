@@ -12,6 +12,7 @@ provider "aws" {
 }
 
 module "network" {
+
   source       = "./modules/network"
   environment  = var.environment
   default_tags = var.default_tags
